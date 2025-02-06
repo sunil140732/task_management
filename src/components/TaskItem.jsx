@@ -58,7 +58,7 @@ const TaskItem = ({task,oneditTask,ondeleteTask, isHighlighted, onClick,onToggle
               {/* container for edit and delete functionalities */}
               <div className='edit-feature'>
                 <span className='text-success'>{task.priority}</span>
-                <button className='btn btn-outline-success mx-2' onClick={()=> setIsEdiTable(true)} disabled={task.completed}>✒</button>
+                <button className='btn btn-outline-success mx-2' onClick={()=> setIsEdiTable(true)}>✒</button>
                 <button className='btn btn-outline-danger mx-2' onClick={()=>ondeleteTask(task.id)}>⛔</button>
                 {/* Add a checkbox to mark as completed */}
                 <input
